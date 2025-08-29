@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Nike Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Barra superior */
+    .topbar {
+      background: #fff;
+      padding: 5px 40px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .topbar .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .topbar .top-links a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 5px;
+    }
+
+    /* Barra principal */
+    .mainbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+    }
+
+    .mainbar .logo {
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .menu a:hover::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #000;
+      bottom: -5px;
+      left: 0;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 5px;
+    }
+
+    .search-box img {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+    }
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .quote {
+      font-size: 48px;
+      font-weight: 900;
+      max-width: 600px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .quote span {
+      background: #000;
+      color: #fff;
+      padding: 0 5px;
+    }
+
+    .text {
+      font-size: 18px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .quote {
+        font-size: 32px;
+      }
+      .text {
+        margin-top: 20px;
+      }
+    }
+    .footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.social a img {
+  width: 22px;
+  margin-right: 10px;
+  filter: invert(100%);
+  transition: 0.3s;
+}
+
+.social a img:hover {
+  transform: scale(1.2);
+}
+
+.payments img,
+.apps img {
+  height: 30px;
+  margin: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.footer-bottom .footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-bottom .footer-links a {
+  color: #bbb;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-bottom .footer-links a:hover {
+  color: #fff;
+}
+
+  
+  </style>
+</head>
+<body>
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="left">
+        <img src="img/snkrs.png" alt="SNKRS" class="icon" width="35" height="35">
+        <img src="img/jordan.png" alt="Jordan" class="icon" width="25" height="25">
+      </div>
+      <nav class="top-links">
+        <a href="#">Acessibilidade</a> |
+        <a href="#">Guia de produtos</a> |
+        <a href="#">Acompanhe seu pedido</a> |
+        <a href="#">Ajuda</a> |
+        <a href="#">Junte-se a nós</a> |
+        <a href="#">Entrar</a>
+      </nav>
+    </div>
+
+    <!-- Mainbar -->
+    <div class="mainbar">
+      <!-- Logo -->
+      <img src="img/logo.png" alt="Logo" class="logo">
+
+      <!-- Menu -->
+      <nav class="menu">
+        <a href="#">Ofertas</a>
+        <a href="#">Lançamentos</a>
+        <a href="#">Masculino</a>
+        <a href="#">Feminino</a>
+        <a href="#">Infantil</a>
+        <a href="#">SNKRS</a>
+      </nav>
+
+      <!-- Ícones e busca -->
+      <div class="icons">
+        <div class="search-box">
+          <input type="text" placeholder="Buscar">
+          <img src="img/busca.png" alt="Buscar">
+        </div>
+        <img src="img/favoritos.png" alt="Favoritos" class="icon">
+        <img src="img/sacola.png" alt="Sacola" class="icon">
+      </div>
+    </div>
+  </header>
+  <img src="img/sccp.png" alt="sccp" width="1280" height="300">
+
+  <section class="section">
+    <div class="quote">
+      "O CORINTHIANS VAI SER O TIME DO POVO, E O 
+      <span>POVO É QUEM VAI FAZER O TIME"</span>
+    </div>
+    <div class="text" >
+      Fundado em setembro de 1910 por um grupo de operários, o Corinthians é um dos maiores times do Brasil. 
+      Ao lado da Fiel torcida, o Timão fez e continua fazendo história no futebol brasileiro e mundial.
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Coluna 1 -->
+    <div class="footer-col">
+      <ul>
+        <li><a href="#">Encontre uma loja Nike</a></li>
+        <li><a href="#">Cadastre-se para receber novidades</a></li>
+        <li><a href="#">Cartão Presente</a></li>
+        <li><a href="#">Mapa do Site</a></li>
+        <li><a href="#">Guia de produtos</a></li>
+        <li><a href="#">Corinthians</a></li>
+        <li><a href="#">Black Friday</a></li>
+        <li><a href="#">Acompanhe seu pedido</a></li>
+      </ul>
+    </div>
+    <!-- Coluna 2 -->
+    <div class="footer-col">
+      <h4>Ajuda</h4>
+      <ul>
+        <li><a href="#">Dúvidas Gerais</a></li>
+        <li><a href="#">Encontre seu tamanho</a></li>
+        <li><a href="#">Entregas</a></li>
+        <li><a href="#">Pedidos</a></li>
+        <li><a href="#">Devoluções</a></li>
+        <li><a href="#">Pagamentos</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Corporativo</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Relatar Problema</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 3 -->
+    <div class="footer-col">
+      <h4>Sobre a Nike</h4>
+      <ul>
+        <li><a href="#">Propósito</a></li>
+        <li><a href="#">Sustentabilidade</a></li>
+        <li><a href="#">Sobre a Nike, Inc.</a></li>
+        <li><a href="#">Sobre o Grupo SBF</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 4 -->
+    <div class="footer-col">
+      <h4>Redes Sociais</h4>
+      <div class="social">
+        <a href="#"><img src="img/icons8-facebook-novo-30.png" alt="Facebook"></a>
+        <a href="#"><img src="img/icons8-instagram-logo-24.png" alt="Instagram"></a>
+        <a href="#"><img src="img/icons8-reproduzir-youtube-30.png" alt="YouTube"></a>
+      </div>
+
+      <h4>Formas de pagamento</h4>
+      <div class="payments">
+        <img src="img/icons8-visa-48.png" alt="Visa">
+        <img src="img/mastercard.png" alt="Mastercard">
+        <img src="img/icons8-amex-48.png" alt="Amex">
+        <img src="img/icons8-foto-48.png" alt="Pix">
+      </div>
+
+      <h4>Baixe o app da Nike</h4>
+      <div class="apps">
+        <img src="img/google.png" alt="Google Play">
+        <img src="img/apple.png" alt="App Store">
+      </div>
+    </div>
+  </div>
+
+  <!-- Linha inferior -->
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Brasil</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Política de Cookies</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+    <p>
+      © 2025 Nike. Todos os direitos reservados. Fisia Comércio de Produtos Esportivos Ltda - CNPJ: 
+      59.546.515/0045-55 Rodovia Fernão Dias, S/N Km 947,5 - Galpão Módulo 3640 - CEP 37640-903 - Extrema - MG
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
